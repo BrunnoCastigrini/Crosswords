@@ -175,4 +175,5 @@ function verificar() {
         }
     }
     right_.innerHTML = `${respostas_certas}`;
+    pergunta_numero.innerHTML = `${respostas_certas+1}`
 }

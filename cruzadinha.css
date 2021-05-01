@@ -50,6 +50,9 @@ table {
 .inativo {
     color: white;
 }
+.numeracao {
+    font-size: 58%;
+}
 /* Textos auxiliares */
 .bloco_de_texto {
     float: left;
