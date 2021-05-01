@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="cruzadinha.js"></script>
+  <link rel="stylesheet" href="cruzadinha.css">
+  <link rel="icon" href="crossword.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+  <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+
+  <title>Cruzadinha</title>
+</head>
+
+<body>
+  <!-- <table> => Cria uma tabela 
+      <tr> => Cria uma linha na tabela 
+      <td> => Cria uma coluna dentro da linha-->
+  <h1>CrossWords  Palavras cruzadas!</h1>
+  <table>
+    <tr id="linha1">
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="ativo" id="data_b1"></td>
+      <td class="ativo" id="address_1"></td>
+      <td class="ativo" id="data_b2"></td>
+      <td class="ativo" id="data_b3"></td>
+      <td class="ativo" id="data_b4"></td>
+      <td class="ativo" id="data_b5"></td>
+      <td class="ativo" id="data_b6"></td>
+      <td class="ativo" id="data_b7"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo">1</td>
+    </tr>
+
+    <tr id="linha2">
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="ativo" id="address_2"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="ativo" id="cpu1"></td>
+      <td class="ativo" id="cpu2"></td>
+      <td class="ativo" id="cpu3"></td>
+      <td class="inativo"></td>
+      <td class="inativo">2</td>
+    </tr>
+
+    <tr id="linha3">
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="ativo" id="registrador1"></td>
+      <td class="ativo" id="registrador2"></td>
+      <td class="ativo" id="registrador3"></td>
+      <td class="ativo" id="registrador4"></td>
+      <td class="ativo" id="registrador5"></td>
+      <td class="ativo" id="registrador6"></td>
+      <td class="ativo" id="registrador7"></td>
+      <td class="ativo" id="registrador8"></td>
+      <td class="ativo" id="registrador9"></td>
+      <td class="ativo" id="registrador10"></td>
+      <td class="ativo" id="registrador11"></td>
+      <td class="ativo" id="registrador12"></td>
+      <td class="ativo" id="registrador13"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo">3</td>
+    </tr>
+
+    <tr id="linha4">
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="ativo" id="address_3"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="ativo" id="i5"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo">4</td>
+    </tr>
+
+    <tr id="linha5">
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="ativo" id="flash1"></td>
+      <td class="ativo" id="flash2"></td>
+      <td class="ativo" id="flash3"></td>
+      <td class="ativo" id="flash4"></td>
+      <td class="ativo" id="flash5"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="ativo" id="quad1"></td>
+      <td class="ativo" id="quad2"></td>
+      <td class="ativo" id="quad3"></td>
+      <td class="ativo" id="dual1"></td>
+      <td class="ativo" id="quad4"></td>
+      <td class="ativo" id="quad5"></td>
+      <td class="ativo" id="quad6"></td>
+      <td class="ativo" id="quad7"></td>
+      <td class="ativo" id="eprom1"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo">5</td>
+    </tr>
+
+    <tr id="linha6">
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="ativo" id="address_4"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="ativo" id="dram1"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="ativo" id="dual2"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="ativo" id="eprom2"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo">6</td>
+    </tr>
+
+    <tr id="linha7">
+      <td class="inativo"></td>
+      <td class="ativo" id="memoria1"></td>
+      <td class="ativo" id="memoria2"></td>
+      <td class="ativo" id="memoria3"></td>
+      <td class="ativo" id="memoria4"></td>
+      <td class="ativo" id="memoria5"></td>
+      <td class="ativo" id="memoria6"></td>
+      <td class="ativo" id="memoria7"></td>
+      <td class="ativo" id="memoria8"></td>
+      <td class="ativo" id="memoria9"></td>
+      <td class="ativo" id="memoria10"></td>
+      <td class="ativo" id="memoria11"></td>
+      <td class="ativo" id="memoria12"></td>
+      <td class="ativo" id="memoria13"></td>
+      <td class="ativo" id="memoria14"></td>
+      <td class="ativo" id="memoria15"></td>
+      <td class="ativo" id="memoria16"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="ativo" id="ram1"></td>
+      <td class="ativo" id="ram2"></td>
+      <td class="ativo" id="ram3"></td>
+      <td class="inativo">7</td>
+    </tr>
+
+    <tr id="linha8">
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="ativo" id="i7"></td>
+      <td class="inativo"></td>
+      <td class="ativo" id="address_5"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="ativo" id="dram2"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="ativo" id="dual3"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="ativo" id="eprom3"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo">8</td>
+    </tr>
+
+    <tr id="linha9">
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="ativo" id="ula1"></td>
+      <td class="ativo" id="ula2"></td>
+      <td class="ativo" id="ula3"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="ativo" id="dual4"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="ativo" id="eprom4"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo">9</td>
+    </tr>
+
+    <tr id="linha10">
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="ativo" id="cs1"></td>
+      <td class="ativo" id="cs2"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="ativo" id="dual5"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo">10</td>
+    </tr>
+
+    <tr id="linha11">
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="ativo" id="rom1"></td>
+      <td class="ativo" id="rom2"></td>
+      <td class="ativo" id="rom3"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo">11</td>
+    </tr>
+
+    <tr id="linha12">
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="ativo" id="dual6"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo">12</td>
+    </tr>
+
+    <tr id="linha13">
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="ativo" id="dual7"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo"></td>
+      <td class="inativo">13</td>
+    </tr>
+
+  </table>
+
+  <div class="bloco_de_texto">
+
+    <div class="questionario">
+      <h2 id="pergunta">Pergunta:</h2>
+      <span class="pergunta_atual" id="change_">Qual a sigla para Central Process Unity?</span> <br>
+
+      <input placeholder="Insira a resposta aqui!" id="resposta_atual" autofocus>
+      <br>
+      <button onclick="verificar()" id="botao_verificar">Verificar</button>
+      <br>
+      <span class="pontos">Pontos: <b id="right_">0</b></span>
+    </div>
+
+    <div class="instrucoes">
+      <h3>Instruções:</h3>
+
+      <span><b>1.</b> Insira a resposta no campo e clique em "Verificar". Caso a resposta esteja correta, a palavra será
+        colocada no caça-palavras e outra pergunta será feita<br>
+        <b>2.</b> Após 16 respostas corretas o jogador ganha e o jogo finaliza. <br>
+        <b>3.</b> As respostas podem ser escritas em caixa baixa ou caixa alta. <br>
+        <b>4.</b> Divirta-se!
+      </span>
+
+    </div>
+
+   <div class="musica">
+    <h4>Sugestão:</h4>
+    <i>burbank - sorry i like you</i>
+    <audio controls>
+      <source src="burbank   sorry i like you.mp3" type="audio/mpeg">
+    </audio>
+   </div>
+
+  </div>
+
+</body>
+
+</html>

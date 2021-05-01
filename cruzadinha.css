@@ -1,0 +1,79 @@
+/* Tabela/caça-palavras */
+body {
+    font-family: 'Dosis', sans-serif;
+    font-size: larger;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+input {
+    border-radius: 6px;
+    margin-bottom: 2%;
+    font-size: 96%;
+    font-family: 'Dosis', sans-serif;
+}
+h1 {
+    width: 25%;
+    margin: auto;
+    padding-bottom: 1.9%;
+    font-size: 247%;
+    text-align: center;
+}
+h4, h3 {
+    margin: 0;
+}
+button {
+    border-radius: 5px;
+    font-family: 'Dosis', sans-serif;
+    font-size: larger;
+    background-color: ghostwhite;
+}
+table {
+    width: 64%;
+    font-family: monospace;
+    text-align: center;
+    font-size: 167%;
+    float: left;
+    border: 2px solid black;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    margin-bottom: 3%;
+    margin-left: 1%;
+    border-radius: 20px;
+}
+.ativo{
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: ghostwhite; 
+    width: 30px;
+    height: 30px;
+}
+.inativo {
+    color: white;
+}
+/* Textos auxiliares */
+.bloco_de_texto {
+    float: left;
+    width: 30%;
+    margin-left: 2%;  
+}
+.questionario {
+    border-radius: 20px;
+    margin-bottom: 2%;
+    padding: 0 2% 2% 2%;
+}
+.questionario h2 {
+    margin: 0;
+    padding-bottom: 1%;
+}
+.pergunta_atual {
+    margin-bottom: 2%;
+}
+.instrucoes {
+    border-radius: 20px;
+    padding-left: 3%;
+}
+.musica {
+    padding-top: 5%;
+    border-radius: 20px;
+    padding-left: 3%;
+}
