@@ -1,0 +1,45 @@
+CPU -> 'Qual a sigla para Central Process Unit?'
+
+ULA -> 'Um circuíto digital que realiza operações lógicas e aritiméticas.
+Qual a sigla desse componente?
+
+Registradores -> Tipo de memória que se encontra no topo da hierarquia de memória.
+
+RAM -> Tipo de memória volátil que tem como nome Random acess memory. Qual a sigla
+deste componente?
+
+ROM -> Tipo de memória não volátil que oferece dados apenas para leitura.
+
+EPFROM -> Tipo de memória não volátil que precisa ter seu chip exposto a 
+luz ultravioleta para apagar seu conteúdo.
+
+FLASH -> Tipo particular de EPFROM que mantém as informações armazenadas sem
+         a necessidade de uma fonte de energia elétrica.
+
+Memória de Massa -> Tipo de memória que precisa ter seu conteúdo copiado na RAM
+para poder ser executado pela CPU
+
+DMA -> Permite que periféricos acessem diretamente a RAM sem ocupar processamento
+
+CS -> Também conhecido como Slave Select(SS). Usado para selecionar um ou um 
+conjunto de circuitos que estão conectados no computador.
+
+Adress bus -> Grupo de linhas ou trilhas usadas para se referir a um endereço
+fisico na memória. O número de trilhas determina a quantidade de endereços na
+memória física.
+
+Data bus -> Também chamado de Memory Bus. É responsável por carregar os dados.
+
+I5 -> Modelo de processador desenvolvido pela Intel que teve sua primeira
+versão lançada em setembro de 2009.
+
+I7 -> Modelo de processador desenvolvido pela Intel que teve sua primeira versão
+lançada em novembro de 2008.
+
+Dual core -> Tipo de processador que possui dois processadores ou melhor dizendo 
+'Dois centros, núcleos ou cores de execução' no mesmo circuito integrado.
+Cada core tem sua própria memória cash e controlador que o permite que funcione
+mais efetivamente do que um processador single.
+
+Quad core -> Segue o mesmo principio que um dual-core, mas agora em teoria tem
+o dobro de capacidade de processamento.
